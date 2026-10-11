@@ -100,7 +100,7 @@ TAVILY_API_KEY="your_tavily_api_key"
 FASTAPI_BASE_URL="http://localhost:8000"
 GROQ_MODEL="openai/gpt-oss-120b"
 ```
-> 🔒 Never commit your `.env` file. It is listed in `.gitignore`.
+
 
 The Pinecone index (`rag-index`, 384 dimensions, cosine metric) is created automatically on first use if it does not exist.
 
@@ -116,7 +116,7 @@ uvicorn main:app --reload --host 0.0.0.0 --port 8000
 ```bash
 streamlit run frontend/app.py
 ```
-The app opens at `http://localhost:8501`. Upload a PDF (for example `sample_docs/DIABETES.pdf`), then ask a question about it.
+The app opens at `http://localhost:8501`. Upload a PDF (for example `sample_docs/Digital_Marketing_Client_Questions.pdf`), then ask a question about it.
 
 ## 🔌 API Endpoints
 
