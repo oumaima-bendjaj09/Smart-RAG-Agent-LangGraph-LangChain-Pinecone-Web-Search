@@ -1,4 +1,4 @@
-# 🤖 Smart RAG Agent – LangGraph, Pinecone & Web Search
+#  Smart RAG Agent – LangGraph, Pinecone & Web Search
 
 **Author** : Oumaima Bendjaj
 
@@ -6,8 +6,7 @@ An AI agent that answers questions by deciding **on its own** whether to use a p
 
 ## 📌 Overview
 
-Most chatbots either rely on the model's memory or always search the web. This project adds a **decision layer**: a router chooses the best source for each question, an LLM judge checks whether the retrieved documents are good enough, and the agent falls back to web search only when needed. Every step is shown to the user in an **agent trace**.
-
+Most chatbots either rely on the model's memory or always search the web. This project adds a **decision layer**: a router chooses the best source for each question, an LLM judge checks whether the retrieved documents are good enough, and the agent falls back to web search only when needed. 
 ## 📸 Demo
 
 ![Upload and settings](images/Screen-Recording_2560x1440_clear.gif)
@@ -17,7 +16,6 @@ Most chatbots either rely on the model's memory or always search the web. This p
 
 - **Intelligent routing:** a router node picks RAG, web search, a direct answer, or ends the conversation.
 - **RAG sufficiency check:** an LLM judges whether retrieved passages actually answer the question before using them.
-- **User-controlled web search:** a UI toggle enables or disables internet access.
 - **Transparent workflow:** the agent trace shows routing decisions, the RAG verdict and retrieval summaries.
 - **PDF upload:** documents are split into chunks, embedded and indexed in Pinecone from the interface.
 - **Conversation memory:** LangGraph checkpointing keeps context across turns.
