@@ -67,7 +67,7 @@ rag_agent_app/
 │   ├── session_manager.py # Streamlit session state
 │   └── config.py          # Frontend configuration
 ├── sample_docs/
-│   └── DIABETES.pdf       # Sample document to try the RAG
+│   └── Digital_Marketing_Client_Questions.pdf      # Sample document to try the RAG
 ├── requirements.txt
 ├── .env.example
 └── README.md
@@ -126,22 +126,8 @@ The app opens at `http://localhost:8501`. Upload a PDF (for example `sample_docs
 | POST | `/chat/` | Send a question and get the answer with the agent trace |
 | GET | `/health` | Check that the API is running |
 
-**Example – `/chat/`**
-```json
-{
-  "session_id": "test-session-001",
-  "query": "What are the treatments of diabetes?",
-  "enable_web_search": true
-}
-```
-The response contains the final `response` and a list of `trace_events` (step, node name, description, event type).
 
-## 🔭 Future Improvements
 
-- Stream the LLM answer token by token
-- Add reranking and multi-query retrieval
-- Long-term memory for chat history
-- User authentication and profiles
-- Additional tools (calculator, code interpreter)
+
 
 
