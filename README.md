@@ -1,4 +1,4 @@
-#  Smart RAG Agent – LangGraph, Langchain, Pinecone & Web Search
+#  Smart RAG Agent – LangGraph, LangChain, Pinecone & Web Search
 
 **Author** : Oumaima Bendjaj
 
